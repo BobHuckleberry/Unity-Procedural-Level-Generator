@@ -1,7 +1,7 @@
 # **Unity-Random-Level-Generator**
-A room-based, breadth first search designed level generator.
+A room-based, breadth first search designed level generator made to generate branched-out maze rooms.
 
 
 ![Alt text](screenshot.png)
 ## Overview
-This generator grows rooms 
+This level generator is designed for games that need a randomised, maze like structure to it, like horror games or rogue-likes. 
