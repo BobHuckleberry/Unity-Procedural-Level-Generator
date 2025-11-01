@@ -5,7 +5,7 @@ using System.Linq;
 public class DungeonPart : MonoBehaviour
 {
     [SerializeField]
-    public List<Transform> entryPoints; // Changed to public
+    public List<Transform> entryPoints;
 
     [SerializeField]
     private BoxCollider boxCollider;
