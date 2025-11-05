@@ -86,6 +86,7 @@ public class LevelGeneration : MonoBehaviour
                 if (newPart == null || newPart.GetAvailableEntryPoints().Count == 0)
                 {
                     Destroy(newPartObj);
+                    Destroy(newPart);
                     continue;
                 }
 
@@ -165,4 +166,5 @@ public class LevelGeneration : MonoBehaviour
     }
     
 }
+
 
