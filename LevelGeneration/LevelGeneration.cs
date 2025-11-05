@@ -102,15 +102,18 @@ public class LevelGeneration : MonoBehaviour
                     Destroy(newPartObj);
                     continue;
                 }
+                else
+                {
+                    // Mark entry points as used
+                    parentRoom.UseEntryPoint(parentEntry);
+                    newPart.UseEntryPoint(newPartEntry);
+                    generatedRooms.Add(newPart);
+                    roomQueue.Enqueue(newPart); // Add to queue for BFS
+                    roomsPlaced++;
+                    //Debug.Log($"Placed room {roomsPlaced}/{maxRoomCount}");
+                }
 
-                // Mark entry points as used
-                parentRoom.UseEntryPoint(parentEntry);
-                newPart.UseEntryPoint(newPartEntry);
-
-                generatedRooms.Add(newPart);
-                roomQueue.Enqueue(newPart); // Add to queue for BFS
-                roomsPlaced++;
-                //Debug.Log($"Placed room {roomsPlaced}/{maxRoomCount}");
+                
             }
         }
 
@@ -162,3 +165,4 @@ public class LevelGeneration : MonoBehaviour
     }
     
 }
+
