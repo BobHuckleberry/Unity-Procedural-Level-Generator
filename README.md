@@ -12,5 +12,6 @@ It is also infintitely generated as each level has a room with a button to the n
 2. startGeneration instantiates the enterance room, and the roomQueue that is used for BFS.
 3. The algorithm then loops all the possible available entry points for that parent room until there is no more available.
 4. within this loop, it selects a random candidate room or hallway and then tries to align them together to checkoverlap
+5. if there is overlap, the new 
 
 
