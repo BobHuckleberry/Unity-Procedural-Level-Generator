@@ -16,4 +16,7 @@ It is also infintitely generated as each level has a room with a button to the n
 6. once the room has all its available entry points filled, the room first added to the queue is put in.
 7. this process is all looped within the while loop until max room count is reached or max attempts reaches zero.
 
+## Further improvements
+I want to rework this algorithm into one that uses some form of 3D grid. This would allow the usage of more complicated algorithms such as A*. This would make gameplay more engaging with rooms connecting into eachother and creating loops the player can get lost in.
+
 
